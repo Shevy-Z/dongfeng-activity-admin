@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>官网后台活动功能清单</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;color:#20242b;background:#f4f6f8}.top{height:64px;padding:0 26px;display:flex;align-items:center;justify-content:space-between;background:white;border-bottom:1px solid #e5e8ec}.top strong{font-size:18px}.top a{padding:9px 16px;border-radius:4px;color:#fff;background:#1688f5;text-decoration:none}.wrap{padding:26px;overflow:auto}.sheet{min-width:1180px;background:#fff;border:1px solid #d7dce2;box-shadow:0 8px 24px rgba(29,43,60,.08)}table{width:100%;border-collapse:collapse}th,td{border:1px solid #2c333a;padding:11px 10px;font-size:14px;line-height:1.6;vertical-align:middle}th{color:#12202c;background:#69d2ee;text-align:center;white-space:nowrap}td.center{text-align:center}td.module{background:#dfeafb;text-align:center;font-weight:600}td.submodule{background:#f7fafc;text-align:center}.status{color:#15803d;background:#eaf7ef;text-align:center;font-weight:700}.footer{padding:16px 26px;display:flex;justify-content:space-between;color:#718096;font-size:13px}.download{color:#1688f5;text-decoration:none}@media(max-width:720px){.wrap{padding:14px}.top{padding:0 14px}.footer{align-items:flex-start;flex-direction:column;gap:8px}}
+  </style>
+</head>
+<body>
+  <header class="top"><strong>官网后台活动功能清单</strong><a href="./index.html">返回系统</a></header>
+  <main class="wrap"><div class="sheet"><table><thead><tr><th>序号</th><th>一级模块</th><th>二级模块</th><th>三级模块</th><th>功能模块</th><th>描述</th><th>修订类型</th><th>技术状态</th><th>验收结果</th></tr></thead><tbody>
+    <tr><td class="center">1</td><td class="module" rowspan="7">营销运营后台</td><td class="submodule" rowspan="4">卡券管理</td><td class="submodule" rowspan="4">卡券列表</td><td>同步商城卡券入口</td><td>在卡券列表操作区新增“同步商城卡券”按钮，点击后打开商城卡券选择弹窗。</td><td class="center">新增</td><td class="status">已完成</td><td class="status">通过</td></tr>
+    <tr><td class="center">2</td><td>商城卡券选择</td><td>弹窗包含查询条件、卡券明细、分页展示，并在序号前增加单选及全选列。</td><td class="center">新增</td><td class="status">已完成</td><td class="status">通过</td></tr>
+    <tr><td class="center">3</td><td>重复卡券校验</td><td>确认同步时校验已存在卡券；多个ID以顿号分隔，单个ID单独显示，并阻止重复同步。</td><td class="center">新增</td><td class="status">已完成</td><td class="status">通过</td></tr>
+    <tr><td class="center">4</td><td>同步结果反馈</td><td>无重复卡券时批量加入卡券列表并提示“同步卡券成功”；未选择数据时给出选择提示。</td><td class="center">新增</td><td class="status">已完成</td><td class="status">通过</td></tr>
+    <tr><td class="center">5</td><td class="submodule" rowspan="3">活动管理</td><td class="submodule" rowspan="3">新增活动</td><td>卡券ID多选</td><td>卡券ID由单选下拉改为多选下拉，选项保持“卡券名称 | 卡券ID”展示形式。</td><td class="center">修改</td><td class="status">已完成</td><td class="status">通过</td></tr>
+    <tr><td class="center">6</td><td>最多可选卡券张数</td><td>新增非必填下拉字段；可选值范围为1至已选择的卡券数量，未选卡券时禁用。</td><td class="center">新增</td><td class="status">已完成</td><td class="status">通过</td></tr>
+    <tr><td class="center">7</td><td>页面是否要求登录</td><td>新增非必填字段，提供“是”和“否”两个单选项。</td><td class="center">新增</td><td class="status">已完成</td><td class="status">通过</td></tr>
+  </tbody></table><div class="footer"><span>更新时间：2026-11-17</span><a class="download" href="./assets/官网后台活动_功能清单.xlsx" download>下载 Excel 功能清单</a></div></div></main>
+</body>
+</html>
