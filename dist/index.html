@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#061a2d" />
+    <meta name="description" content="东风日产活动与卡券运营管理系统" />
+    <title>营销运营中心</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="主导航">
+        <div class="brand">
+          <span class="brand-mark">N</span>
+          <div><strong>东风日产</strong><small>营销运营中心</small></div>
+        </div>
+        <nav class="nav">
+          <button class="nav-top" data-page="overview"><span class="nav-icon">⌂</span><span>概况</span></button>
+          <div class="nav-group open">
+            <button class="nav-top nav-group-title"><span class="nav-icon">▦</span><span>营销管理</span><span class="chevron">⌃</span></button>
+            <div class="nav-sub">
+              <span class="nav-section">活动管理</span>
+              <button data-page="activities" class="active">活动列表</button>
+              <button data-page="activity-create">新增活动</button>
+              <span class="nav-section">卡券管理</span>
+              <button data-page="coupons">卡券列表</button>
+              <button data-page="coupon-create">新增卡券</button>
+            </div>
+          </div>
+          <button class="nav-top"><span class="nav-icon">▣</span><span>车型</span><span class="chevron">⌄</span></button>
+          <button class="nav-top"><span class="nav-icon">⌁</span><span>金融</span><span class="chevron">⌄</span></button>
+          <button class="nav-top"><span class="nav-icon">♙</span><span>互动</span><span class="chevron">⌄</span></button>
+          <button class="nav-top"><span class="nav-icon">□</span><span>内容</span><span class="chevron">⌄</span></button>
+          <button class="nav-top"><span class="nav-icon">♕</span><span>用户</span><span class="chevron">⌄</span></button>
+          <button class="nav-top"><span class="nav-icon">▧</span><span>线索</span><span class="chevron">⌄</span></button>
+          <button class="nav-top"><span class="nav-icon">⚙</span><span>设置</span><span class="chevron">⌄</span></button>
+        </nav>
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="收起侧栏">☰</button>
+      </aside>
+      <div class="workspace">
+        <header class="topbar">
+          <div class="crumbs" id="crumbs">营销 / 活动管理 / <strong>活动列表</strong></div>
+          <div class="top-actions">
+            <button class="icon-button notification" aria-label="通知">♢<span></span></button>
+            <div class="user"><span class="avatar">周</span><div><strong>zouxiaowei</strong><small>系统管理员</small></div></div>
+          </div>
+        </header>
+        <main id="main" class="main" tabindex="-1"></main>
+      </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modalRoot"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
